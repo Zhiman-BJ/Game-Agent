@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "game-tools": {
+      "command": "/absolute/path/to/venv/bin/python",
+      "args": [
+        "-m", "godot_task_forge_mcp.http_stdio_bridge",
+        "--url", "http://127.0.0.1:6601/mcp",
+        "--timeout", "60"
+      ]
+    }
+  }
+}

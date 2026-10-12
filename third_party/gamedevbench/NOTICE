@@ -1,0 +1,6 @@
+GameDevBench solver runtime and local Kimi Code/confinement adaptations.
+Derived from the GameDevBench project; see upstream copyright notices and LICENSE.
+Local adapters add Kimi Code, provider bridging and checkpoint support.
+Upstream project: https://github.com/waynchi/gamedevbench
+Code-only release adds an installable MCP entry point, stderr diagnostics,
+and interpreter-based MCP launch commands for portable adapter setup.

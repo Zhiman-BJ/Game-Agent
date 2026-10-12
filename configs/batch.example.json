@@ -1,0 +1,25 @@
+{
+  "model": "YOUR_RESPONSES_MODEL",
+  "reasoning_effort": "xhigh",
+  "godot_binary": "${GODOT_BIN}",
+  "codex_binary": "${CODEX_BIN}",
+  "private_root": "${TASK_PRIVATE_ROOT}",
+  "api_concurrency_per_provider": 16,
+  "godot_slots": 32,
+  "providers": {
+    "provider_a": {
+      "base_url": "http://127.0.0.1:18989/a/v1",
+      "proxy_token_file": "${TASK_PRIVATE_ROOT}/a.token"
+    }
+  },
+  "sources": [{
+    "repository_id": "owner/game",
+    "source_repo": "/absolute/path/to/clean-game-checkout",
+    "source_revision": "FULL_GIT_COMMIT_SHA",
+    "project_subdir": ".",
+    "candidate_count": 2,
+    "historical_goals": [],
+    "benchmark_goals": [],
+    "feature_candidates": []
+  }]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Godot 短程任务构造"
+  short_description: "从真实工程批量构造完整功能短程任务，控制接入难度、验收质量与任务重复"
+  default_prompt: "使用 $godot-task-construction，基于指定 Godot 仓库和已有任务清单，按当前阶段构造或审查完整功能的短程任务；保留真实工程接入工作，保证公开需求、start、reference、validator 对齐，并记录质量证据、难度假设和批次去重结果。"

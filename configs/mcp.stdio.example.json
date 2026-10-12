@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "godot-screenshot": {
+      "command": "/absolute/path/to/venv/bin/python",
+      "args": ["-m", "gamedevbench.src.mcp_server"],
+      "env": {
+        "GODOT_EXEC_PATH": "/absolute/path/to/godot",
+        "GODOT_SCREENSHOT_DISPLAY": "1"
+      }
+    }
+  }
+}

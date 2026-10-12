@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "godot-task-forge"
+version = "0.1.0"
+description = "Godot task construction, agent experiments and MCP tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0 AND MIT"
+license-files = ["LICENSE", "NOTICE", "third_party/gamedevbench/LICENSE", "third_party/gamedevbench/NOTICE"]
+dependencies = ["requests>=2.31,<3", "Pillow>=10,<12"]
+
+[project.optional-dependencies]
+benchmark = ["PyYAML>=6,<7"]
+mcp = ["mcp>=1.10,<2"]
+
+[project.scripts]
+gamedevbench-mcp = "gamedevbench.src.mcp_server:main"
+game-mcp-bridge = "godot_task_forge_mcp.http_stdio_bridge:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "third_party/gamedevbench"]
+include = ["godot_task_forge_mcp*", "gamedevbench*"]
